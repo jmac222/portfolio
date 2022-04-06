@@ -1,12 +1,15 @@
 import React from "react";
+import back from '../asset/back.webp'
+import linken from '../asset/linken.png'
+import git from '../asset/git.png'
 
 const Landing = () => {
   return (
 
-    <div className="landing">
+    <div className="landing" id="home">
       <div className="gradient"></div>
       <img
-        src="https://images.pexels.com/photos/11627764/pexels-photo-11627764.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        src={back}
         alt=""
         className="background"
       />
@@ -14,8 +17,8 @@ const Landing = () => {
       <div className="header">
         <h1 className="name">John McFarland</h1>
         <div className="socials">
-            <img src="https://cdn.icon-icons.com/icons2/2428/PNG/512/linkedin_black_logo_icon_147114.png" width='50px'></img>
-            <img src = 'https://cdn-icons-png.flaticon.com/512/25/25231.png' width='50px'></img>
+            <a href="https://www.linkedin.com/in/john-mcfarland-008b92236"><img src={linken} width='50px'></img></a>
+            <a href = 'https://github.com/jmac222'><img src = {git} width='50px'></img></a>
         </div>
       </div>
     </div>
