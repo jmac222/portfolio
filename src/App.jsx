@@ -5,6 +5,10 @@ import Navigation from "./layout/Nav";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 
+ // You can also use <link> for styles
+// ..
+
+
 function App() {
   return (
     <>

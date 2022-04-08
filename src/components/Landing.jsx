@@ -3,6 +3,7 @@ import back from '../asset/back.webp'
 import linken from '../asset/linken.png'
 import git from '../asset/git.png'
 
+
 const Landing = () => {
   return (
 

@@ -1,10 +1,13 @@
 import React from "react";
-import { Col, Container, Row, Card, Button } from "react-bootstrap";
+import { Col, Row, Card, Button } from "react-bootstrap";
+import FadeInSection from "./Fade";
 
 const Projects = () => {
   return (
+    <div className="background">
     <div className="projects" id="projects">
       <h1>My Projects</h1>
+      <FadeInSection>
 
       <Row xs={1} md={3} className="g-4 ind">
         <Col>
@@ -123,6 +126,8 @@ const Projects = () => {
           Resume
         </Button>
       </div>
+      </FadeInSection>
+    </div>
     </div>
   );
 };

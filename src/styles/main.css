@@ -10,9 +10,15 @@
   background: transparent;
   box-sizing: inherit;
   overflow-x: hidden;
+  
+  
 }
 h1 {
   margin: 0;
+  overflow-y: hidden;
+}
+.h5{
+  overflow-y: hidden;
 }
 body,
 html {
@@ -22,6 +28,10 @@ html {
   padding: 0;
   width: 100%;
   scroll-behavior: smooth;
+  
+}
+body{
+  background-color: rgb(251, 250, 245);
 }
 .landing {
   height: 100vh;
@@ -88,13 +98,21 @@ html {
   padding-top: 0;
 }
 
+.background{
+  background-color: rgb(251, 250, 245);
+  width: 100vw;
+
+}
+
 .projects {
   height: auto;
-  width: 100vw;
+  width: 80vw;
   position: relative;
   background-color: rgb(251, 250, 245);
   padding: 20px;
   overflow: hidden;
+  margin: auto;
+  
 }
 .projects h1 {
   text-align: center;
@@ -156,4 +174,28 @@ html {
 
 .contact-form h2{
   margin-top: 40px;
+  overflow-y: hidden;
+}
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20vh);
+  visibility: hidden;
+  transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+  will-change: opacity, visibility;
+}
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+
+.languages{
+  display: flex;
+  justify-content: space-between;
+}
+
+.languages h1{
+  font-size: 3em;
+  margin: 0 10px 0 10px;
 }
