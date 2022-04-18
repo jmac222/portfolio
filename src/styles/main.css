@@ -114,6 +114,7 @@ body {
   padding: 20px;
   overflow: hidden;
   margin: auto;
+  
 }
 .projects h1 {
   text-align: center;
@@ -216,6 +217,7 @@ body {
 .front-card {
   background-color: whitesmoke;
   position: absolute;
+  overflow-y: hidden;
 }
 
 .back-card button {
@@ -254,11 +256,12 @@ body {
   width: fit-content;
   position: relative;
   height: 500px;
-  width: 23vw;
+  width: 370px;
   background-color: rgba(251, 250, 245, 0) !important;
   transition: 0.3s ease-in-out all;
   text-decoration: none;
   border: none !important;
+  overflow-y: hidden;
   
 
 }
@@ -267,7 +270,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
-  flex-wrap: wrap;
+  flex-wrap: wrap !important;
 }
 .card img{
   width: 100%;
