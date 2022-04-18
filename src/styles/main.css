@@ -10,14 +10,18 @@
   background: transparent;
   box-sizing: inherit;
   overflow-x: hidden;
-  
-  
 }
 h1 {
   margin: 0;
   overflow-y: hidden;
 }
-.h5{
+.h5 {
+  overflow-y: hidden;
+}
+img {
+  overflow-y: hidden;
+}
+h2 {
   overflow-y: hidden;
 }
 body,
@@ -28,9 +32,8 @@ html {
   padding: 0;
   width: 100%;
   scroll-behavior: smooth;
-  
 }
-body{
+body {
   background-color: rgb(251, 250, 245);
 }
 .landing {
@@ -98,10 +101,9 @@ body{
   padding-top: 0;
 }
 
-.background{
+.background {
   background-color: rgb(251, 250, 245);
   width: 100vw;
-
 }
 
 .projects {
@@ -112,7 +114,6 @@ body{
   padding: 20px;
   overflow: hidden;
   margin: auto;
-  
 }
 .projects h1 {
   text-align: center;
@@ -163,16 +164,15 @@ body{
   text-align: center;
 }
 
-.contact-form{
+.contact-form {
   background-color: rgb(251, 250, 245);
   width: 50vw;
   height: 25vw;
   box-shadow: 12px 12px 2px 1px rgba(106, 106, 134, 0.363);
   flex-wrap: wrap;
-  
 }
 
-.contact-form h2{
+.contact-form h2 {
   margin-top: 40px;
   overflow-y: hidden;
 }
@@ -190,12 +190,94 @@ body{
   visibility: visible;
 }
 
-.languages{
+.languages {
   display: flex;
   justify-content: space-between;
 }
 
-.languages h1{
+.languages h1 {
   font-size: 3em;
   margin: 0 10px 0 10px;
+}
+
+.back-card {
+  background-color: #212529;
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  height: 100%;
+
+}
+
+.front-card {
+  background-color: whitesmoke;
+  position: absolute;
+}
+
+.back-card button {
+  background-color: #198754;
+  width: 50%;
+  margin: auto;
+  color: whitesmoke;
+  height: 15%;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out all;
+}
+.back-card button:hover {
+  background-color: #06af60;
+}
+
+.card:hover .front-card {
+  transform: rotateY(180deg);
+}
+.card:hover .back-card {
+  transform: rotateY(0deg);
+}
+
+.card-side {
+  backface-visibility: hidden;
+  width: 100%;
+  transition: all 0.6s ease-in-out;
+  /* position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  flex-flow: column; */
+  height: 100%; 
+}
+.card {
+  width: fit-content;
+  position: relative;
+  height: 500px;
+  width: 23vw;
+  background-color: rgba(251, 250, 245, 0) !important;
+  transition: 0.3s ease-in-out all;
+  text-decoration: none;
+  border: none !important;
+  
+
+}
+
+.card-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+.card img{
+  width: 100%;
+  height: 200px;
+  
+}
+
+.card h2{
+  text-align: center;
+}
+.card p{
+  padding: 15px;
 }
